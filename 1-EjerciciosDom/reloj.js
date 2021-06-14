@@ -16,4 +16,20 @@ export const DigitalClock =(reloj,btnPlay,btnStop)=>{
         }
     })
 }
-export const Alarm=()=>{}
+export const Alarm=(alarm,btnStar,btnStop)=>{
+    let intervalAlarm;
+    const audio=document.createElement('audio')
+    audio.src=alarm
+    document.addEventListener('click',(e)=>{
+        if(e.target.matches(btnStar)){
+          intervalAlarm=  setInterval(()=>{
+                audio.play();
+            },1000)
+        }
+        if(e.target.matches(btnStop)){
+            clearInterval(intervalAlarm)
+            audio.currentTime=0
+            audio.pause();
+        }
+    })
+}

@@ -18,3 +18,4 @@ export const hamburguerMneu=(btnPanel,clasPanel,menuLink)=>{
         }
     })
 }
+
