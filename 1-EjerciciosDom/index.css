@@ -1,4 +1,4 @@
-:root{
+ :root{
     --main-font:'sans-serif';
     --font-size:16px;
     --main-color:#f7df1e;
@@ -28,7 +28,7 @@ img{
     top: 0;
     padding: 1rem;
     background-color: var(--main-color);
-    -ms-text-combine-horizontal: var(--second-color);
+    color: var(--second-color);
 }
 .header h1{
     margin: 0;
