@@ -21,6 +21,15 @@ export const Menu=()=>{
     const DOMSpanSeparator2=document.createElement('span');
     DOMSpanSeparator2.textContent='-'
 
+    //link Contacto
+    const DOMLinkContact=document.createElement('a');
+    DOMLinkContact.textContent='Contacto';
+    DOMLinkContact.href='#/contact';
+
+    //span
+    const DOMSpanSeparator3=document.createElement('span');
+    DOMSpanSeparator3.textContent='-'
+
     // link a pag js
     const DOMLinkJS=document.createElement('a');
     DOMLinkJS.textContent='Aprende js';
@@ -33,6 +42,8 @@ export const Menu=()=>{
     DOMNav.appendChild(DOMSpanSeparator1)
     DOMNav.appendChild(DOMLinkSearch)
     DOMNav.appendChild(DOMSpanSeparator2)
+    DOMNav.appendChild(DOMLinkContact)
+    DOMNav.appendChild(DOMSpanSeparator3)
     DOMNav.appendChild(DOMLinkJS)
     return DOMNav
 }

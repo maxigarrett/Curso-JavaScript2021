@@ -9,12 +9,13 @@ export const useFetch=async(props)=>{
     .then(data=> cbSucces(data))
     .catch(err=>{
         let message=err.statusText || 'Ocurrio un error al acceso de la api'
-        document.getElementById('root').innerHTML=`
+        document.getElementById('sectionCard').innerHTML=`
         <div class="error">
             Error ${err.status}- ${message}
         </div>`
 
         console.log(err)
+        document.querySelector('.loader').remove();//desparece cuando aparece el erro el loader
     })
 
 
